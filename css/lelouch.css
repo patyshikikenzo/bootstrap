@@ -1,0 +1,23 @@
+                                                                            /* imagem do header */
+header img {                            
+    width: 300 px;
+    height: 300 px;
+    object-fit: cover;
+
+    border: 20px solid lightskyblue;
+}
+
+.bg-primary {
+    background-color: purple !important;             /* !important faz com que forçe o bootstrap a esta nova definiçao*/
+}
+
+footer {
+    background-color: purple;
+    text-align: center;
+    padding: 30px;
+
+}
+
+footer p {
+    margin: 0;
+}

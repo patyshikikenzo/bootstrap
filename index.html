@@ -1,0 +1,125 @@
+<!DOCTYPE html>                                                                            <!-- ! + Enter makes the magic :) --> <!-- alt + shft + f para ver se ta bem formatado  --> <!--Alt + shft + f = organiza o codigo, pretty cool -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> <!-- Getbootstrap. Documentation. CSS  -->
+    
+
+    <title> Este é o... Lelouch </title>
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">                   <!-- fixed top faz com que o hamburger ande sempre ao longo de todo o scroll-->
+    <a class="navbar-brand text-white" href="#">Lelouch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#sobre">Sobre</a>                  <!-- Este #X está ligado ao ID. assim ele sabe q tem de ir buscar aquele bocado de pagina-->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="tracos">Traços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="amigos">Amigos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contacta">Contacta o Lelouch</a>
+        </li>
+      </ul>
+    </div>
+  </nav> 
+    <header class="jumbotron text-center bg-primary">                                                 <!-- Ao copiar isto do BootStrap tenho de mudar o div para header, para ficar melhor organizado  --> <!-- Usa-se o text-center para meter a imagem centrada -->
+        <img class="rounded-circle" src="images/lelouch2.jpg">
+        <h1 class="display-4">Lelouch</h1>
+        <link rel="stylesheet" href="css/lelouch.css">                                         <!--É assim que se faz o link para o css (tem de estar dps das referencias da imagem, pq como é em css, ele faz ovewrite e fica a informaçao original da imagem primeiro)-->
+        <div id="sobre"></div>                                                  
+    </header>
+
+    <main class="container">
+        <h2 id="sobre"> Sobre </h2>
+        <p> Lelouch é um rapaz adolescente que, numa coicidencia, ganhou poderes mágicos que lhe permitem controlar outras pessoas.</p>
+        <img class="img-fluid" src="images/lelouch1.jpg">
+        <p> Lelouch, o Rei</p>
+        <h2 id="tracos">Traços</h2>                                                           <!-- id serve para qd na barra de pesquisa clico numa palavra, ele reconhece q tem de vir ate aqui-->
+        <div class="row">                                                                    <!--Tag div pq é "vazio". Linhas  -->
+            <div class="col-12 text-center">                                                 <!-- Aqui digo quantas colunas quero (smp ate 12). Colunas -->
+                <ul class="list-group list-group-horizontal">                                <!-- Copy paste do bootstrap, como quero que fique a coluna -->
+                    <li class="list-group-item w-100 bg-primary text-white">Corajoso</li>    <!-- este bg primary esta no css e faz com que o fundo fique de X cor. nao é uma classe pq começa com um ponto . no css e pq o bootstrap ja tem um bg primary, entao nos simplsmente redefenimos a cor, nao criamos a classe em si.-->
+                    <li class="list-group-item w-100">Ambicioso</li>                                       
+                    <li class="list-group-item w-100 bg-primary text-white">Correto</li>     <!-- w-100 faz com que em vez dos elementos ficarem pequeninos, fiquem no tamanho max do browser. a questão é que como tao todos a 100%, ele automaticamente divide-->                        
+                  </ul>
+            </div>
+        </div>
+        <h2 id="amigos" class="mt-4 mb-2">Amigos</h2>                                                     <!-- m significa margem. isto sao classses q ja tem no bootstrap. Serve para dar distancia entre os dif elementos-->    <!-- id serve para qd na barra de pesquisa clico numa palavra, ele reconhece q tem de vir ate aqui-->   
+        <p> Lelouch, apesar de ter muitos inimigos, teve também muitos amigos que o ajudaram na sua jornada. Amigos fiéis e que fizeram muitos sacrifícios por ele.</p>
+        <div class="row mx-auto">
+             <!--Coluna 1 -->
+            <div class="col-md-4">                                                           <!-- Tem de ser Col 4 porque vou querer 3 imagens. Entao, 3 x Y tem de dar 12. Enquanto não disser se é Sm md ou lg as colunas não sao responsivas-->
+                <div class="card">
+                    <img src="images/kallen.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Kallen stadtfeld</h5>
+                      <p class="card-text">Kallen is a strong-willed, determined, loyal and brave individual who can also be quite short-tempered, forceful and somewhat impulsive. Despite her tough attitude, Kallen is actually quite sensitive, compassionate and truly gentle, however after the death of her brother she doesn't show this side much anymore.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>                                                                              
+            </div>
+             <!--Coluna 2 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/suzaku.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Suzaku Kururugi</h5>
+                      <p class="card-text">After Japan was conquered and Suzaku killed his father, Suzaku's personality was significantly changed. He dedicated his cause to not endorse terrorism or rebellion, which he believed would only result in pointless killing. Unwilling to sacrifice the innocent, Suzaku held a more positive outlook on Britannia, believing that it could be changed for the better.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+             <!--Coluna 3 -->
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="images/c.c" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">C.C</h5>
+                      <p class="card-text">C.C. is immortal, healing from any kind of wound (implied to include beheading) with enough time. She also doesn't age. Apart from her immortality, C.C. has the ability to bestow people with the power of Geass, which manifests differently in each person but generally carries the ability to affect the minds of those it is used on in some way.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <h2 id="contacta"class="mt-3">Contacta o Lelouch</h2>                                       <!-- id serve para qd na barra de pesquisa clico numa palavra, ele reconhece q tem de vir ate aqui-->
+
+        <!--Formulario -->
+        <form class="border p-3 mb-3">         <!-- padding é para dentro (aumenta a distancia de dentro da caixa. margin é para fora)-->         <!-- Form para formularios :) -->
+            <div class="form-group">                                                         
+              <label for="exampleInputEmail1">Nome</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> <!-- Os input tem sempre um type. Os input é onde se guarda a informação -->
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensagem</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>                   <!-- Se o Formulario nao tiver submit, nao funciona pq senao os dados ficam na propria pagina-->
+          </form>
+    </main>
+    <footer>                                                                                <!--Bootstrap nao tem footer :O (qd se faz o shift + !)-->
+        <p>Trabalho desenvolvido no âmbito da cadeira de Programação II - Licenciatura em Multimédia &copy; 2020 </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!-- Getbootstrap. Documentation. jS Bundle.  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
